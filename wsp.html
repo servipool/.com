@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario a WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #20b258;
+        }
+    </style>
+</head>
+<body>
+    <form id="whatsappForm">
+        <h2>Enviar a WhatsApp</h2>
+        <input type="text" id="name" placeholder="Nombre y Apellido" required>
+        <input type="text" id="email" placeholder="Ciudad" required>
+        <textarea id="message" placeholder="Problema" rows="4" required></textarea>
+        <button type="button" onclick="sendToWhatsApp()">Enviar</button>
+    </form>
+
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Número de WhatsApp (reemplazar con el tuyo, incluyendo el código de país)
+            const phoneNumber = "573158941568";
+
+            // Crear el mensaje
+            const whatsappMessage = `Hola, soy ${name}. Actualmente vivo en ${email}. Este es mi problema: ${message}`;
+
+            // Formatear el enlace
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Redirigir al enlace
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
+</body>
+</html>
+-->
